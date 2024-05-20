@@ -1,4 +1,4 @@
-# Model-Parameter-Prediction-Method-for-Distributed-Machine-Learning
+# MP^2$
 
 ## Introduction
 This is the code repository related to our paper [Model Parameter Prediction Method for Distributed Machine Learning]. The paper is currently under review, and the code will be made public after acceptance.
