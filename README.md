@@ -1,4 +1,4 @@
-# MP^2$
+# MP<sup>2</sup>
 
 ## Introduction
 This is the code repository related to our paper [Model Parameter Prediction Method for Distributed Machine Learning]. The paper is currently under review, and the code will be made public after acceptance.
