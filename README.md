@@ -36,7 +36,13 @@ ability. Many methods aim to address this communication bottleneck by reducing c
 | Library | Known Working
 | tensorflow | 1.14.0
 
+
 ## Experiments
+Please first download the required datasets: mnist_data, cifar-10-python, and cifar-100-python.
+If needed, train the prediction models for the datasets using the file mp2-train-stage.py.
+
+Training process:
+Run mp2-ps.py and mp2-worker.py.
 
 ## Contact
 If you have any questions, please contact us via email: [2112230039@e.gzhu.edu.cn]
