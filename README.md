@@ -1,22 +1,32 @@
 # MP<sup>2</sup>
 
-## Introduction
-This is the code repository related to our paper [Model Parameter Prediction Method for Distributed Machine Learning]. The paper is currently under review, and the code will be made public after acceptance.
+##Updates
+11/20/2024: Tensorflow version uploaded
 
-## Current Status
-- **Paper Status:** Under review
-- **Code Status:** In preparation
+## ABSTRACT
+As the size of deep neural network (DNN) models and datasets increases, distributed training becomes popular to
+ reduce the training time. However, a severe communication bottleneck in distributed training limits its scal
+ability. Many methods aim to address this communication bottleneck by reducing communication traffic, such as
+ gradient sparsification and quantization. However, these methods either are at the expense of losing model
+ accuracy or introducing lots of computing overhead. We have observed that the data distribution between layers
+ of neural network models is similar. Thus, we propose a model parameter prediction method (MP2) to accelerate
+ distributed DNN training under parameter server (PS) framework, where workers push only a subset of model
+ parameters to the PS, and residual model parameters are locally predicted by an already-trained deep neural
+ network model on the PS. We address several key challenges in this approach. First, we build a hierarchical
+ parameters dataset by randomly sampling a subset of model from normal distributed trainings. Second, we
+ design a neural network model with the structure of “convolution + channel attention + Max pooling” for
+ predicting model parameters by using a prediction result-based evaluation method. For VGGNet, ResNet, and
+ AlexNet models on CIFAR10 and CIFAR100 datasets, compared with Baseline, Top-k, deep gradient compression
+ (DGC), and weight nowcaster network (WNN), MP2 can reduce traffic by up to 88.98%; and accelerates the
+ training by up to 47.32% while not losing the model accuracy. MP2has shown good generalization.
 
-## Description
+## The system framework of MP2
 As the size of machine learning models and datasets increases, distributed training becomes popular to reduce the training time. However, a severe communication bottleneck limits its scalability. Many methods aim to solve this communication bottleneck by reducing communication traffic, such as gradient sparsification and quantification. However, these methods either are at the expense of losing model accuracy or introduce lots of computing overhead. Thus, we propose a model parameter prediction method (MP2) under parameter server (PS) framework.
+![image](https://github.com/user-attachments/assets/2fec5456-cab2-42c8-afc9-cfcc1e3b08a8)
 
-## Instructions
-We will provide basic project structure and usage instructions to give readers an idea of how to use the code. Detailed instructions and examples will be updated after the code is released.
-
-## Plan
-- [ ] Wait for paper acceptance
-- [ ] Make the code public
-- [ ] Provide detailed documentation
+## Dependency
+| Library | Known Working
+| tensorflow | 1.14.0
 
 ## Contact
 If you have any questions, please contact us via email: [2112230039@e.gzhu.edu.cn]
