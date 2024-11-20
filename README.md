@@ -44,6 +44,12 @@ If needed, train the prediction models for the datasets using the file mp2-train
 Training process:
 Run mp2-ps.py and mp2-worker.py.
 
+
+## Citation
+Wai-xi Liu, Dao-xiao Chen, Miao-quan Tan, Kong-yang Chen, Yue Yin, Wen-Li Shang, Jin Li, Jun Cai,
+Model Parameter Prediction Method for Accelerating Distributed DNN Training, Computer Networks(1区), 2024, 110883,
+
+
 ## Contact
 If you have any questions, please contact us via email: [2112230039@e.gzhu.edu.cn]
 
