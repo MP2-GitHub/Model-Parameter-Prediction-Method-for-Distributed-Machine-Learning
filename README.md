@@ -21,8 +21,10 @@ ability. Many methods aim to address this communication bottleneck by reducing c
  training by up to 47.32% while not losing the model accuracy. MP<sup>2</sup>has shown good generalization.
 
 ## The system framework of MP<sup>2</sup>
-As the size of machine learning models and datasets increases, distributed training becomes popular to reduce the training time. However, a severe communication bottleneck limits its scalability. Many methods aim to solve this communication bottleneck by reducing communication traffic, such as gradient sparsification and quantification. However, these methods either are at the expense of losing model accuracy or introduce lots of computing overhead. Thus, we propose a model parameter prediction method (MP<sup>2</sup>) under parameter server (PS) framework.
 ![image](https://github.com/user-attachments/assets/2fec5456-cab2-42c8-afc9-cfcc1e3b08a8)
+
+## The overall structure of prediction model
+![image](https://github.com/user-attachments/assets/7d19c73f-772e-4468-aefe-c656d1d3427c)
 
 ## Dependency
 | Library | Known Working
