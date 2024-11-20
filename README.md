@@ -1,7 +1,9 @@
 # MP<sup>2</sup>
 
+
 ## Updates
 11/20/2024: Tensorflow version uploaded
+
 
 ## ABSTRACT
 As the size of deep neural network (DNN) models and datasets increases, distributed training becomes popular to
@@ -20,15 +22,21 @@ ability. Many methods aim to address this communication bottleneck by reducing c
  (DGC), and weight nowcaster network (WNN),MP<sup>2</sup> can reduce traffic by up to 88.98%; and accelerates the
  training by up to 47.32% while not losing the model accuracy. MP<sup>2</sup>has shown good generalization.
 
+
 ## The system framework of MP<sup>2</sup>
 ![image](https://github.com/user-attachments/assets/2fec5456-cab2-42c8-afc9-cfcc1e3b08a8)
 
+
 ## The overall structure of prediction model
-![image](https://github.com/user-attachments/assets/7d19c73f-772e-4468-aefe-c656d1d3427c)
+![image](https://github.com/user-attachments/assets/590c7a65-9edb-40a1-933c-4f7362ad7b52)
+
+
 
 ## Dependency
 | Library | Known Working
 | tensorflow | 1.14.0
+
+## Experiments
 
 ## Contact
 If you have any questions, please contact us via email: [2112230039@e.gzhu.edu.cn]
